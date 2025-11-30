@@ -1,0 +1,175 @@
+{
+  "siteName": "Los Santos County Sheriff's Department",
+  "siteShortName": "LSCSO",
+  "description": "Protéger et servir notre communauté avec intégrité et professionnalisme",
+  
+  "organization": {
+    "name": "Los Santos County Sheriff's Department",
+    "founded": 1975,
+    "headquarters": "1 Mission Row, Los Santos, San Andreas, USA",
+    "phone": {
+      "emergency": "911",
+      "nonEmergency": "(555) 700-LSCSO"
+    },
+    "email": "info@lscso.gov",
+    "website": "www.lscso.gov"
+  },
+
+  "colors": {
+    "primary": "#1e293b",
+    "secondary": "#dc2626",
+    "accent": "#fbbf24",
+    "text": "#1f2937",
+    "lightBg": "#f8fafc",
+    "white": "#ffffff"
+  },
+
+  "mission": "Le Los Santos County Sheriff's Department est dédié à maintenir l'ordre public, protéger les citoyens et promouvoir la sécurité communautaire. Avec plus de deux décennies d'excellence et de dévouement, nous servons le comté de Los Santos avec intégrité, respect et professionnalisme.",
+
+  "values": [
+    {
+      "name": "Intégrité",
+      "description": "Nous agissons avec honnêteté et transparence"
+    },
+    {
+      "name": "Respect",
+      "description": "Nous honorons la dignité de chaque personne"
+    },
+    {
+      "name": "Service",
+      "description": "Nous servons notre communauté avec dévouement"
+    },
+    {
+      "name": "Excellence",
+      "description": "Nous nous efforçons de la meilleure qualité"
+    },
+    {
+      "name": "Courage",
+      "description": "Nous affrontons les défis avec bravoure"
+    }
+  ],
+
+  "statistics": [
+    {
+      "number": "2000+",
+      "label": "Agents et Personnel"
+    },
+    {
+      "number": "24/7",
+      "label": "Services d'Urgence"
+    },
+    {
+      "number": "95%",
+      "label": "Satisfaction Citoyenne"
+    },
+    {
+      "number": "50+",
+      "label": "Années de Service"
+    }
+  ],
+
+  "services": [
+    {
+      "id": 1,
+      "name": "Patrouille Routière",
+      "description": "Surveillance et application de la loi sur les routes du comté",
+      "icon": "fa-car"
+    },
+    {
+      "id": 2,
+      "name": "Sécurité Communautaire",
+      "description": "Protection et prévention du crime dans les quartiers",
+      "icon": "fa-home"
+    },
+    {
+      "id": 3,
+      "name": "Enquêtes Criminelles",
+      "description": "Investigation professionnelle des crimes graves",
+      "icon": "fa-search"
+    },
+    {
+      "id": 4,
+      "name": "Services Correctionnels",
+      "description": "Gestion des installations carcérales et des détenus",
+      "icon": "fa-users"
+    },
+    {
+      "id": 5,
+      "name": "Centre d'Appels d'Urgence",
+      "description": "Réception et traitement des appels d'urgence 911",
+      "icon": "fa-phone"
+    },
+    {
+      "id": 6,
+      "name": "Formation et Entraînement",
+      "description": "Développement professionnel continu du personnel",
+      "icon": "fa-graduation-cap"
+    }
+  ],
+
+  "socialMedia": [
+    {
+      "platform": "Facebook",
+      "icon": "fab fa-facebook",
+      "url": "#"
+    },
+    {
+      "platform": "Twitter",
+      "icon": "fab fa-twitter",
+      "url": "#"
+    },
+    {
+      "platform": "Instagram",
+      "icon": "fab fa-instagram",
+      "url": "#"
+    },
+    {
+      "platform": "YouTube",
+      "icon": "fab fa-youtube",
+      "url": "#"
+    }
+  ],
+
+  "contactInfo": {
+    "address": "1 Mission Row, Los Santos, San Andreas, USA",
+    "phone": "(555) 700-LSCSO",
+    "email": "info@lscso.gov",
+    "careersEmail": "careers@lscso.gov",
+    "hours": "24/7 - Toujours à votre service"
+  },
+
+  "divisions": [
+    "Direction",
+    "Opérations",
+    "Enquêtes Criminelles",
+    "Sécurité Communautaire",
+    "Patrouille",
+    "Centre d'Appels",
+    "Services Correctionnels",
+    "Administration"
+  ],
+
+  "ranks": [
+    "Sheriff",
+    "Sous-Sheriff",
+    "Capitaine",
+    "Lieutenant",
+    "Sergent",
+    "Officier",
+    "Adjoint",
+    "Coordonnatrice",
+    "Analyste"
+  ],
+
+  "siteFeatures": {
+    "responsiveDesign": true,
+    "darkMode": false,
+    "contactForm": true,
+    "teamGallery": true,
+    "socialIntegration": true,
+    "searchFunctionality": false,
+    "multiLanguage": false
+  },
+
+  "footerText": "© 2025 Los Santos County Sheriff's Department. Tous droits réservés."
+}

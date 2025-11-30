@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSCSO - Los Santos County Sheriff's Department</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-gradient-to-r from-slate-900 to-slate-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo et Titre -->
+                <div class="flex items-center space-x-3 cursor-pointer hover:scale-105 transition-transform">
+                    <div class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
+                        <img src="logo.png" alt="Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="text-white font-bold text-lg">LSCSO</h1>
+                        <p class="text-amber-400 text-xs">Sheriff's Office</p>
+                    </div>
+                </div>
+
+
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#home"
+                        class="nav-link text-white hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Accueil</a>
+                    <a href="#about"
+                        class="nav-link text-white hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">À
+                        Propos</a>
+                    <a href="#team"
+                        class="nav-link text-white hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Équipe</a>
+                    <a href="#services"
+                        class="nav-link text-white hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                    <a href="#contact"
+                        class="nav-link text-white hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <div class="md:hidden">
+                    <button class="hamburger text-white text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="pt-16 pb-32 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div
+                class="absolute top-20 left-10 w-72 h-72 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse">
+            </div>
+            <div
+                class="absolute top-40 right-10 w-72 h-72 bg-red-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse animation-delay-2000">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Texte Hero -->
+                <div class="space-y-6 animate-fadeInUp">
+                    <h1
+                        class="text-5xl md:text-6xl font-black bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-300 leading-tight">
+                        Los Santos County Sheriff's Department
+                    </h1>
+                    <p class="text-xl text-gray-300">
+                        Protéger et servir notre communauté avec intégrité, respect et professionnalisme depuis plus de
+                        deux décennies
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})"
+                            class="px-8 py-4 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 font-bold rounded-lg hover:shadow-2xl hover:scale-105 transition-all">
+                            En savoir plus
+                        </button>
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+                            class="px-8 py-4 border-2 border-amber-400 text-amber-400 font-bold rounded-lg hover:bg-amber-400/10 transition-all">
+                            Nous Contacter
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Logo Hero -->
+                <div class="relative h-80 flex items-center justify-center">
+                    <div class="relative w-64 h-64">
+                        <img src="logo.webp" alt="Logo" class="w-full h-full animate-float object-contain">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-4">À Propos du LSCSO</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-amber-400 to-red-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Texte -->
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fas fa-target text-amber-500"></i> Notre Mission
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Le Los Santos County Sheriff's Department est dédié à maintenir l'ordre public, protéger les
+                            citoyens et promouvoir la sécurité communautaire. Avec plus de deux décennies d'excellence
+                            et de dévouement, nous servons le comté de Los Santos avec intégrité, respect et
+                            professionnalisme.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fas fa-heart text-red-500"></i> Nos Valeurs
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-3 text-gray-300">
+                                <span class="text-amber-500 font-bold mt-1">✓</span>
+                                <span><strong>Intégrité:</strong> Nous agissons avec honnêteté et transparence</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-300">
+                                <span class="text-amber-500 font-bold mt-1">✓</span>
+                                <span><strong>Respect:</strong> Nous honorons la dignité de chaque personne</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-300">
+                                <span class="text-amber-500 font-bold mt-1">✓</span>
+                                <span><strong>Service:</strong> Nous servons notre communauté avec dévouement</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-300">
+                                <span class="text-amber-500 font-bold mt-1">✓</span>
+                                <span><strong>Excellence:</strong> Nous nous efforçons de la meilleure qualité</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-300">
+                                <span class="text-amber-500 font-bold mt-1">✓</span>
+                                <span><strong>Courage:</strong> Nous affrontons les défis avec bravoure</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Statistiques -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div
+                        class="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-xl shadow-lg text-center text-white hover:shadow-2xl transition-all">
+                        <div class="text-4xl font-black text-amber-400 mb-2">2000+</div>
+                        <p class="text-sm font-semibold">Agents et Personnel</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-xl shadow-lg text-center text-white hover:shadow-2xl transition-all">
+                        <div class="text-4xl font-black text-amber-400 mb-2">24/7</div>
+                        <p class="text-sm font-semibold">Services d'Urgence</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-red-900 to-red-800 p-6 rounded-xl shadow-lg text-center text-white hover:shadow-2xl transition-all">
+                        <div class="text-4xl font-black text-amber-400 mb-2">95%</div>
+                        <p class="text-sm font-semibold">Satisfaction Citoyenne</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-red-900 to-red-800 p-6 rounded-xl shadow-lg text-center text-white hover:shadow-2xl transition-all">
+                        <div class="text-4xl font-black text-amber-400 mb-2">50+</div>
+                        <p class="text-sm font-semibold">Années de Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-4">Nos Services</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-amber-400 to-red-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="group bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border-l-4 border-amber-400">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-lg flex items-center justify-center text-3xl text-slate-900 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Patrouille Routière</h3>
+                    <p class="text-gray-300">Surveillance et application de la loi sur les routes du comté</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="group bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border-l-4 border-amber-400">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-lg flex items-center justify-center text-3xl text-slate-900 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Sécurité Communautaire</h3>
+                    <p class="text-gray-300">Protection et prévention du crime dans les quartiers</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="group bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border-l-4 border-amber-400">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-lg flex items-center justify-center text-3xl text-slate-900 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Enquêtes Criminelles</h3>
+                    <p class="text-gray-300">Investigation professionnelle des crimes graves</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="group bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border-l-4 border-red-500">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center text-3xl text-white mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Services Correctionnels</h3>
+                    <p class="text-gray-300">Gestion des installations carcérales et des détenus</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="group bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border-l-4 border-red-500">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center text-3xl text-white mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Centre d'Appels d'Urgence</h3>
+                    <p class="text-gray-300">Réception et traitement des appels d'urgence 911</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div
+                    class="group bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border-l-4 border-red-500">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center text-3xl text-white mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Formation et Entraînement</h3>
+                    <p class="text-gray-300">Développement professionnel continu du personnel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-4">Notre Équipe</h2>
+                <p class="text-xl text-gray-300 mb-4">Les meilleurs agents du Los Santos County Sheriff's Department</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-amber-400 to-red-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Agent 1 -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(251,191,36,0.3)] hover:-translate-y-3 transition-all border-t-4 border-amber-400 relative">
+                    <!-- Background professionnel avec effet -->
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-amber-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-amber-500 transition-all">
+                        <!-- Effet de lumière subtile -->
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+
+                        <!-- Photo de l'agent -->
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="sheriff.png" alt="Adam Stark" class="w-full h-full object-cover">
+                            <!-- Overlay subtil -->
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+
+                        <!-- Badge de notation -->
+                        <!-- Insigne de grade -->
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-red-600 to-red-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            COMMANDEMENT
+                        </div>
+                    </div>
+
+                    <!-- Contenu principal -->
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <!-- En-tête avec titre et nom -->
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                SHERIFF
+                            </div>
+                            <h3 class="text-3xl font-black text-white mt-1">Adam Stark</h3>
+                            <p class="text-sm text-amber-300 font-semibold mt-1">LSC-001 • Chef de Division</p>
+                            <div class="flex justify-center gap-1 mt-3">
+                                <span class="text-amber-400 text-xl">★★★★★</span>
+                            </div>
+                        </div>
+
+                        <!-- Informations détaillées -->
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-amber-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Sheriff</span>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-amber-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-amber-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Direction Générale</span>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-amber-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-amber-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Commandement</span>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-red-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-red-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contacts -->
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-amber-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-amber-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-amber-400"></i>
+                                    <span>j.sawyer@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-amber-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-amber-400"></i>
+                                    <span>(555) 700-0001</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-amber-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-amber-400"></i>
+                                    <span>Bureau: 2ème étage</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bouton CTA -->
+                        <button
+                            class="w-full bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(251,191,36,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+
+                    <!-- Décoration coin supérieur droit -->
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-amber-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 2 - Under Sheriff -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(96,165,250,0.3)] hover:-translate-y-3 transition-all border-t-4 border-blue-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-blue-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-blue-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="logo.png" alt="Maria Santos" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            OPÉRATIONS</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-blue-500 to-blue-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                UNDER SHERIFF</div>
+                            <h3 class="text-3xl font-black text-white mt-1">N/A</h3>
+                            <p class="text-sm text-blue-300 font-semibold mt-1">LSC-002 • Vice-Commander</p>
+                            <div class="flex justify-center gap-1 mt-3"><span class="text-blue-400 text-xl">★★★★☆</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-blue-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Under Sheriff</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-blue-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-blue-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Opérations</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-blue-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-blue-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Patrouille Routière</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-blue-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-blue-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-blue-400"></i>
+                                    <span>m.santos@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-blue-400"></i>
+                                    <span>(555) 700-0002</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-blue-400"></i>
+                                    <span>Bureau: 2ème étage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-blue-400 via-blue-300 to-blue-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(96,165,250,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">Dossier
+                            Complet</button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 3 - Commander -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(236,72,153,0.3)] hover:-translate-y-3 transition-all border-t-4 border-pink-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-pink-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-pink-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-pink-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="thierry.webp" alt="Thierry Didier" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-pink-600 to-pink-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            COMMANDEMENT</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-pink-500 to-pink-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                COMMANDER</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Thierry Didier</h3>
+                            <p class="text-sm text-pink-300 font-semibold mt-1">LSC-003 • Chef Enquêtes</p>
+                            <div class="flex justify-center gap-1 mt-3"><span class="text-pink-400 text-xl">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-pink-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-pink-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Commander</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-pink-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-pink-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Enquêtes Criminelles</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-pink-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-pink-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Crimes Graves & Homicides</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-pink-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-pink-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-pink-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-pink-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-pink-400"></i>
+                                    <span>r.harper@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-pink-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-pink-400"></i>
+                                    <span>(555) 700-0003</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-pink-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-pink-400"></i>
+                                    <span>Bureau: 3ème étage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-pink-400 via-pink-300 to-pink-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(236,72,153,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">Dossier
+                            Complet</button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-pink-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 4 - Captain -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(168,85,247,0.3)] hover:-translate-y-3 transition-all border-t-4 border-purple-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-purple-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-purple-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-purple-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Ramirez.webp" alt="Ramirez Alonzo" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-purple-600 to-purple-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            COMMANDEMENT</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-purple-500 to-purple-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                CAPTAIN</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Ramirez Alonzo</h3>
+                            <p class="text-sm text-purple-300 font-semibold mt-1">LSC-004 • Chef Division</p>
+                            <div class="flex justify-center gap-1 mt-3"><span
+                                    class="text-purple-400 text-xl">★★★★☆</span></div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-purple-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-purple-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Captain</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-purple-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-purple-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Sécurité Communautaire</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-purple-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-purple-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Relations Publiques</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-purple-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-purple-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-purple-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-purple-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-purple-400"></i>
+                                    <span>j.hernandez@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-purple-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-purple-400"></i>
+                                    <span>(555) 700-0004</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-purple-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-purple-400"></i>
+                                    <span>Bureau: 2ème étage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-purple-400 via-purple-300 to-purple-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(168,85,247,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">Dossier
+                            Complet</button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-purple-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 5 - Deputy Sergeant II -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(99,102,241,0.3)] hover:-translate-y-3 transition-all border-t-4 border-indigo-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-indigo-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-indigo-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-indigo-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Fernando.webp" alt="Fernando Lopez" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-indigo-600 to-indigo-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            PATROUILLE</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-indigo-500 to-indigo-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SERGEANT II</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Fernando Lopez</h3>
+                            <p class="text-sm text-indigo-300 font-semibold mt-1">LSC-005 • Superviseur Équipe</p>
+                            <div class="flex justify-center gap-1 mt-3"><span
+                                    class="text-indigo-400 text-xl">★★★★☆</span></div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-indigo-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-indigo-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sergeant II</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-indigo-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-indigo-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Patrouille</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-indigo-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-indigo-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Superviseur Équipe</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-indigo-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-indigo-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-indigo-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-indigo-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-indigo-400"></i>
+                                    <span>m.chen@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-indigo-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-indigo-400"></i>
+                                    <span>(555) 700-0005</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-indigo-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-indigo-400"></i>
+                                    <span>Bureau: 2ème étage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-indigo-400 via-indigo-300 to-indigo-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(99,102,241,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-indigo-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 6 - Deputy Sergeant I -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(74,222,128,0.3)] hover:-translate-y-3 transition-all border-t-4 border-green-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-green-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-green-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-green-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Davidde.webp" alt="Davide Beritos" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-green-600 to-green-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            COMMUNICATIONS</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-green-500 to-green-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SERGEANT I</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Davide Beritos</h3>
+                            <p class="text-sm text-green-300 font-semibold mt-1">LSC-006 • Superviseur Communications
+                            </p>
+                            <div class="flex justify-center gap-1 mt-3"><span
+                                    class="text-green-400 text-xl">★★★★☆</span></div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-green-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-green-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sergeant I</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-green-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-green-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Centre d'Appels</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-green-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-green-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Superviseur Communications</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-green-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-green-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-green-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-green-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-green-400"></i>
+                                    <span>j.williams@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-green-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-green-400"></i>
+                                    <span>(555) 700-0006</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-green-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-green-400"></i>
+                                    <span>Bureau: 1er étage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-green-400 via-green-300 to-green-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(74,222,128,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-green-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 7 - Deputy Sergeant I (2nd) -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(20,184,166,0.3)] hover:-translate-y-3 transition-all border-t-4 border-teal-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-teal-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-teal-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-teal-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Meven.webp" alt="Meven PHELPS" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-teal-600 to-teal-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            ENQUÊTES</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-teal-500 to-teal-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SERGEANT I</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Meven PHELPS</h3>
+                            <p class="text-sm text-teal-300 font-semibold mt-1">LSC-007 • Superviseur Enquêtes</p>
+                            <div class="flex justify-center gap-1 mt-3"><span class="text-teal-400 text-xl">★★★★☆</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-teal-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-teal-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sergeant I</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-teal-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-teal-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Enquêtes Criminelles</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-teal-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-teal-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Superviseur Enquêtes</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-teal-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-teal-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-teal-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-teal-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-teal-400"></i>
+                                    <span>d.thompson@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-teal-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-teal-400"></i>
+                                    <span>(555) 700-0007</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-teal-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-teal-400"></i>
+                                    <span>Bureau: 3ème étage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-teal-400 via-teal-300 to-teal-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(20,184,166,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-teal-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 8 - Deputy Sheriff II -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(234,88,12,0.3)] hover:-translate-y-3 transition-all border-t-4 border-orange-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-orange-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-orange-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-orange-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Davide.webp" alt="Davide Rivera" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-orange-600 to-orange-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            PATROUILLE</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-orange-500 to-orange-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SHERIFF II</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Davide Rivera</h3>
+                            <p class="text-sm text-orange-300 font-semibold mt-1">LSC-008 • Agente de Patrouille</p>
+                            <div class="flex justify-center gap-1 mt-3"><span
+                                    class="text-orange-400 text-xl">★★★☆☆</span></div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-orange-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-orange-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sheriff II</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-orange-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-orange-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Patrouille</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-orange-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-orange-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Sécurité Routière</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-orange-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-orange-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-orange-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-orange-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-orange-400"></i>
+                                    <span>a.johnson@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-orange-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-orange-400"></i>
+                                    <span>(555) 700-0008</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-orange-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-orange-400"></i>
+                                    <span>Secteur: Nord</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(234,88,12,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 9 - Deputy Sheriff II -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(239,68,68,0.3)] hover:-translate-y-3 transition-all border-t-4 border-red-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-red-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-red-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-red-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Logan.webp" alt="Logan Henri" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-red-600 to-red-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            PATROUILLE</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-red-500 to-red-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SHERIFF II</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Logan Henri</h3>
+                            <p class="text-sm text-red-300 font-semibold mt-1">LSC-009 • Agent Intervention</p>
+                            <div class="flex justify-center gap-1 mt-3"><span class="text-red-400 text-xl">★★★☆☆</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-red-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-red-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sheriff II</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-red-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-red-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Patrouille</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-red-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-red-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Intervention d'Urgence</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-red-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-red-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-red-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-red-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-red-400"></i>
+                                    <span>c.garcia@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-red-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-red-400"></i>
+                                    <span>(555) 700-0009</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-red-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-red-400"></i>
+                                    <span>Secteur: Centre</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-red-400 via-red-300 to-red-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(239,68,68,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-red-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 10 - Deputy Sheriff II -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(244,63,94,0.3)] hover:-translate-y-3 transition-all border-t-4 border-rose-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-rose-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-rose-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-rose-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Kurtis.webp" alt="Kurtis Forge" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-rose-600 to-rose-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            ENQUÊTES</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-rose-500 to-rose-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SHERIFF II</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Kurtis Forge</h3>
+                            <p class="text-sm text-rose-300 font-semibold mt-1">LSC-010 • Agent Enquêtes Criminelles</p>
+                            <div class="flex justify-center gap-1 mt-3"><span class="text-rose-400 text-xl">★★★★☆</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-rose-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-rose-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sheriff II</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-rose-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-rose-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Enquêtes Criminelles</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-rose-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-rose-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Crimes Économiques</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-rose-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-rose-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-rose-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-rose-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-rose-400"></i>
+                                    <span>t.patterson@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-rose-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-rose-400"></i>
+                                    <span>(555) 700-0010</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-rose-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-rose-400"></i>
+                                    <span>Bureau: 2B</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-rose-400 via-rose-300 to-rose-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(244,63,94,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-rose-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 11 - Deputy Sheriff I -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(236,72,153,0.3)] hover:-translate-y-3 transition-all border-t-4 border-pink-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-pink-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-pink-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-pink-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Juan.webp" alt="Juan SUAVEZ" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-pink-600 to-pink-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            CORRECTIONS</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-pink-500 to-pink-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SHERIFF I</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Juan SUAVEZ</h3>
+                            <p class="text-sm text-pink-300 font-semibold mt-1">LSC-011 • Agente Services Correctionnels
+                            </p>
+                            <div class="flex justify-center gap-1 mt-3"><span class="text-pink-400 text-xl">★★★☆☆</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-pink-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-pink-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sheriff I</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-pink-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-pink-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Services Correctionnels</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-pink-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-pink-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Gestion Carcérale</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-pink-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-pink-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-pink-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-pink-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-pink-400"></i>
+                                    <span>s.mitchell@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-pink-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-pink-400"></i>
+                                    <span>(555) 700-0011</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-pink-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-pink-400"></i>
+                                    <span>Cellblock: A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-pink-400 via-pink-300 to-pink-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(236,72,153,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-pink-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 12 - Deputy Sheriff I -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(132,204,22,0.3)] hover:-translate-y-3 transition-all border-t-4 border-lime-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-lime-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-lime-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-lime-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Alex.webp" alt="Alex Wood" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-lime-600 to-lime-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            PATROUILLE</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-lime-500 to-lime-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SHERIFF I</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Alex Wood</h3>
+                            <p class="text-sm text-lime-300 font-semibold mt-1">LSC-012 • Agent Patrouille</p>
+                            <div class="flex justify-center gap-1 mt-3"><span class="text-lime-400 text-xl">★★★★☆</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-lime-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-lime-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sheriff I</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-lime-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-lime-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Patrouille</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-lime-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-lime-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Patrouille générale</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-lime-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-lime-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-lime-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-lime-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-lime-400"></i>
+                                    <span>k.anderson@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-lime-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-lime-400"></i>
+                                    <span>(555) 700-0012</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-lime-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-lime-400"></i>
+                                    <span>Secteur: Sud</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-lime-400 via-lime-300 to-lime-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(132,204,22,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-lime-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 13 - Deputy Sheriff I -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(217,70,239,0.3)] hover:-translate-y-3 transition-all border-t-4 border-fuchsia-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-fuchsia-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-fuchsia-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-fuchsia-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Tom.webp" alt="Tom Scolla" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-fuchsia-600 to-fuchsia-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            ADMINISTRATION</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-fuchsia-500 to-fuchsia-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SHERIFF I</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Tom Scolla</h3>
+                            <p class="text-sm text-fuchsia-300 font-semibold mt-1">LSC-013 • Agente Administration</p>
+                            <div class="flex justify-center gap-1 mt-3"><span
+                                    class="text-fuchsia-400 text-xl">★★★★☆</span></div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-fuchsia-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-fuchsia-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sheriff I</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-fuchsia-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-fuchsia-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Administration</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-fuchsia-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-fuchsia-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Ressources Humaines</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-fuchsia-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-fuchsia-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-fuchsia-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-fuchsia-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-fuchsia-400"></i>
+                                    <span>l.brown@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-fuchsia-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-fuchsia-400"></i>
+                                    <span>(555) 700-0013</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-fuchsia-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-fuchsia-400"></i>
+                                    <span>Bureau: RH-3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-fuchsia-400 via-fuchsia-300 to-fuchsia-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(217,70,239,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-fuchsia-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 14 - Deputy Sheriff I -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(34,211,238,0.3)] hover:-translate-y-3 transition-all border-t-4 border-cyan-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-cyan-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-cyan-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-cyan-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Bilel.webp" alt="Bilel Rio" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-cyan-600 to-cyan-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            PATROUILLE</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-cyan-500 to-cyan-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SHERIFF I</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Bilel Rio</h3>
+                            <p class="text-sm text-cyan-300 font-semibold mt-1">LSC-014 • Agent Patrouille</p>
+                            <div class="flex justify-center gap-1 mt-3"><span class="text-cyan-400 text-xl">★★★★☆</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-cyan-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-cyan-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sheriff I</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-cyan-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-cyan-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Patrouille</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-cyan-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-cyan-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Patrouille générale</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-cyan-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-cyan-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-cyan-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-cyan-400"></i>
+                                    <span>j.robinson@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-cyan-400"></i>
+                                    <span>(555) 700-0014</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-cyan-400"></i>
+                                    <span>Secteur: Nord</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-cyan-400 via-cyan-300 to-cyan-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(34,211,238,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-cyan-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+
+                <!-- Agent 15 - Deputy Sheriff I -->
+                <div
+                    class="group bg-slate-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-[0_20px_40px_rgba(168,85,247,0.3)] hover:-translate-y-3 transition-all border-t-4 border-violet-400 relative">
+                    <div
+                        class="relative h-72 bg-gradient-to-br from-violet-600 via-slate-700 to-slate-900 flex items-center justify-center overflow-hidden group-hover:from-violet-500 transition-all">
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
+                        <div
+                            class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-violet-300 group-hover:scale-105 transition-transform duration-300">
+                            <img src="Buck.webp" alt="Buck Karen" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-gradient-to-r from-violet-600 to-violet-700 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg">
+                            PATROUILLE</div>
+                    </div>
+                    <div class="p-7 bg-gradient-to-b from-slate-800 to-slate-900">
+                        <div class="text-center mb-5 border-b border-slate-700 pb-4">
+                            <div
+                                class="inline-block bg-gradient-to-r from-violet-500 to-violet-400 text-slate-900 px-3 py-1 rounded-full text-xs font-black mb-2">
+                                DEPUTY SHERIFF I</div>
+                            <h3 class="text-3xl font-black text-white mt-1">Buck Karen</h3>
+                            <p class="text-sm text-violet-300 font-semibold mt-1">LSC-015 • Agente Patrouille</p>
+                            <div class="flex justify-center gap-1 mt-3"><span
+                                    class="text-violet-400 text-xl">★★★★☆</span></div>
+                        </div>
+                        <div class="space-y-3 mb-5">
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-violet-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-violet-300 uppercase tracking-wider">Grade</span>
+                                    <span class="text-sm font-bold text-white">Deputy Sheriff I</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-violet-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-violet-300 uppercase tracking-wider">Division</span>
+                                    <span class="text-sm font-bold text-white">Patrouille</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-violet-400 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-violet-300 uppercase tracking-wider">Spécialité</span>
+                                    <span class="text-sm font-bold text-white">Patrouille générale</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-slate-700/50 p-3 rounded-lg border-l-2 border-violet-500 hover:bg-slate-700 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="text-xs font-bold text-violet-300 uppercase tracking-wider">Statut</span>
+                                    <span class="text-sm font-bold text-lime-400">En service</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gradient-to-r from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-slate-600 mb-4">
+                            <p class="text-xs font-bold text-violet-300 uppercase tracking-wider mb-2">Coordonnées</p>
+                            <div class="space-y-2 text-xs">
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-violet-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-envelope w-4 text-violet-400"></i>
+                                    <span>e.rodriguez@lscso.gov</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-violet-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-phone w-4 text-violet-400"></i>
+                                    <span>(555) 700-0015</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-gray-300 hover:text-violet-400 transition-colors cursor-pointer">
+                                    <i class="fas fa-id-card w-4 text-violet-400"></i>
+                                    <span>Secteur: Ouest</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-gradient-to-r from-violet-400 via-violet-300 to-violet-500 text-slate-900 font-black py-3 px-4 rounded-lg hover:shadow-[0_10px_25px_rgba(168,85,247,0.4)] transition-all group-hover:scale-105 transform text-sm uppercase tracking-wider">
+                            Dossier Complet
+                        </button>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-violet-400/10 to-transparent rounded-bl-3xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-4">Nous Contacter</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-amber-400 to-red-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Info Contact -->
+                <div class="space-y-6">
+                    <div
+                        class="flex items-start gap-4 bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border-l-4 border-amber-400">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-500 rounded-lg flex items-center justify-center text-xl text-slate-900 flex-shrink-0">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-1">Adresse</h4>
+                            <p class="text-gray-300">1 Mission Row, Los Santos<br>San Andreas, USA</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex items-start gap-4 bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border-l-4 border-amber-400">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-500 rounded-lg flex items-center justify-center text-xl text-slate-900 flex-shrink-0">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-1">Téléphone</h4>
+                            <p class="text-gray-300">Urgence: <strong class="text-red-400">911</strong><br>Non-Urgence:
+                                <strong>(555) 700-LSCSO</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex items-start gap-4 bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border-l-4 border-red-500">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center text-xl text-white flex-shrink-0">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-1">Email</h4>
+                            <p class="text-gray-300"><a href="mailto:info@lscso.gov"
+                                    class="text-amber-400 hover:underline">info@lscso.gov</a><br><a
+                                    href="mailto:careers@lscso.gov"
+                                    class="text-amber-400 hover:underline">careers@lscso.gov</a></p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex items-start gap-4 bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border-l-4 border-red-500">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center text-xl text-white flex-shrink-0">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-1">Heures</h4>
+                            <p class="text-gray-300">24/7 - Toujours à votre service</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire Contact -->
+                <form class="bg-slate-800 p-8 rounded-xl shadow-lg" id="contactForm">
+                    <div class="mb-4">
+                        <label class="block text-white font-bold mb-2">Votre Nom</label>
+                        <input type="text" placeholder="Jean Dupont"
+                            class="w-full px-4 py-3 border-2 border-slate-600 bg-slate-700 text-white rounded-lg focus:border-amber-400 focus:outline-none transition-colors placeholder-gray-400"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-white font-bold mb-2">Votre Email</label>
+                        <input type="email" placeholder="email@exemple.com"
+                            class="w-full px-4 py-3 border-2 border-slate-600 bg-slate-700 text-white rounded-lg focus:border-amber-400 focus:outline-none transition-colors placeholder-gray-400"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-white font-bold mb-2">Sujet</label>
+                        <input type="text" placeholder="Objet de votre message"
+                            class="w-full px-4 py-3 border-2 border-slate-600 bg-slate-700 text-white rounded-lg focus:border-amber-400 focus:outline-none transition-colors placeholder-gray-400"
+                            required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-white font-bold mb-2">Message</label>
+                        <textarea placeholder="Votre message ici..." rows="6"
+                            class="w-full px-4 py-3 border-2 border-slate-600 bg-slate-700 text-white rounded-lg focus:border-amber-400 focus:outline-none transition-colors placeholder-gray-400"
+                            required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 font-bold py-3 px-6 rounded-lg hover:shadow-2xl hover:scale-105 transition-all">
+                        <i class="fas fa-paper-plane mr-2"></i> Envoyer le Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-slate-900 to-slate-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- LSCSO Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <img src="logo.webp" alt="Grade" class="w-10 h-10 object-contain drop-shadow-md">
+                        </div>
+
+                        <h4 class="text-xl font-black text-amber-400">LSCSO</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm">Los Santos County Sheriff's Department</p>
+                    <p class="text-gray-500 text-xs mt-2">Protéger et servir depuis 1975</p>
+                </div>
+
+                <!-- Liens Rapides -->
+                <div>
+                    <h5 class="text-lg font-bold text-amber-400 mb-4">Liens Rapides</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="text-gray-300 hover:text-amber-400 transition-colors">Accueil</a>
+                        </li>
+                        <li><a href="#about" class="text-gray-300 hover:text-amber-400 transition-colors">À Propos</a>
+                        </li>
+                        <li><a href="#services"
+                                class="text-gray-300 hover:text-amber-400 transition-colors">Services</a></li>
+                        <li><a href="#team" class="text-gray-300 hover:text-amber-400 transition-colors">Équipe</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h5 class="text-lg font-bold text-amber-400 mb-4">Services</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition-colors">Urgences</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition-colors">Enquêtes</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition-colors">Patrouilles</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition-colors">Carrières</a></li>
+                    </ul>
+                </div>
+
+                <!-- Réseaux Sociaux -->
+                <div>
+                    <h5 class="text-lg font-bold text-amber-400 mb-4">Suivez-nous</h5>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 hover:bg-amber-500 rounded-lg flex items-center justify-center transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 hover:bg-amber-500 rounded-lg flex items-center justify-center transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 hover:bg-amber-500 rounded-lg flex items-center justify-center transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 hover:bg-amber-500 rounded-lg flex items-center justify-center transition-all">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-slate-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                    <p>&copy; 2025 Los Santos County Sheriff's Department. Tous droits réservés.</p>
+                    <div class="flex gap-6 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-amber-400 transition-colors">Politique de Confidentialité</a>
+                        <a href="#" class="hover:text-amber-400 transition-colors">Conditions d'Utilisation</a>
+                        <a href="#" class="hover:text-amber-400 transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
