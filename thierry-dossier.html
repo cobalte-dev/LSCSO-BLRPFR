@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Complet - Commander Thierry Didier | LSCSO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f0f1e 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+
+        .header-hero {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%),
+                        linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, rgba(15, 15, 30, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid rgba(6, 182, 212, 0.3);
+        }
+
+        .badge-section {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .badge-section:hover {
+            background: rgba(30, 41, 59, 0.8);
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.2);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+            border-radius: 50%;
+            border: 3px solid #0f172a;
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 11px;
+            top: 24px;
+            width: 2px;
+            height: calc(100% + 2rem);
+            background: linear-gradient(180deg, #06b6d4, #8b5cf6);
+            opacity: 0.3;
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .stat-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(30, 41, 59, 0.8);
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.2);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .narrative-section {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(6, 182, 212, 0.15);
+            border-radius: 12px;
+            padding: 2rem;
+            line-height: 1.8;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        .narrative-section p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .narrative-section p:first-letter {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #06b6d4;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+            border-left: 4px solid #06b6d4;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #e0f2fe;
+            position: relative;
+        }
+
+        .quote-box::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(6, 182, 212, 0.2);
+            font-family: Georgia, serif;
+        }
+
+        .achievement-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 0.5rem;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid rgba(6, 182, 212, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-title i {
+            color: #06b6d4;
+            font-size: 1.8rem;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(6, 182, 212, 0.15);
+            color: #06b6d4;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .back-button:hover {
+            background: rgba(6, 182, 212, 0.3);
+            gap: 0.75rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .skill-item {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            background: rgba(30, 41, 59, 0.8);
+            border-color: rgba(6, 182, 212, 0.4);
+            transform: translateY(-3px);
+        }
+
+        .skill-item i {
+            color: #06b6d4;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-date {
+            color: #06b6d4;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .timeline-title {
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .timeline-description {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="animate-fade-in">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/30 border-b border-slate-700/50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
+                    LSCSO
+                </a>
+            </div>
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Retour au site
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header Hero -->
+    <div class="header-hero py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <!-- Photo -->
+                <div class="flex-shrink-0 w-64 h-64 rounded-xl overflow-hidden shadow-2xl border-2 border-cyan-500/30 animate-fade-in-up">
+                    <img src="thierry.webp" alt="Commander Thierry Didier" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Info -->
+                <div class="flex-1 animate-fade-in-up" style="animation-delay: 0.2s">
+                    <div class="inline-block bg-gradient-to-r from-cyan-600 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 shadow-lg">
+                        COMMANDER
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-black mb-3 text-white">
+                        Thierry Didier
+                    </h1>
+                    <p class="text-xl text-cyan-300 font-semibold mb-4">Commandant - Division Enquêtes Criminelles</p>
+                    <p class="text-gray-300 mb-4">Né en Novembre 2005 • Springfield, Ohio</p>
+                    
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-4 mt-6">
+                        <div class="stat-card">
+                            <div class="text-xs text-cyan-300 font-bold uppercase tracking-wider mb-2">Service</div>
+                            <div class="stat-number">19 ans</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="text-xs text-cyan-300 font-bold uppercase tracking-wider mb-2">Rang</div>
+                            <div class="stat-number">5★</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="text-xs text-cyan-300 font-bold uppercase tracking-wider mb-2">Statut</div>
+                            <div class="text-xl font-bold text-lime-400">Actif</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-6 py-12">
+        <!-- Quick Facts -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="badge-section">
+                <div class="text-cyan-300 text-sm font-bold uppercase tracking-wider mb-2">📍 Lieu de Naissance</div>
+                <div class="text-white font-semibold">Springfield, Ohio</div>
+            </div>
+            <div class="badge-section">
+                <div class="text-cyan-300 text-sm font-bold uppercase tracking-wider mb-2">🎂 Âge</div>
+                <div class="text-white font-semibold">19 ans</div>
+            </div>
+            <div class="badge-section">
+                <div class="text-cyan-300 text-sm font-bold uppercase tracking-wider mb-2">📂 Dossier</div>
+                <div class="text-white font-semibold">LSC-003</div>
+            </div>
+            <div class="badge-section">
+                <div class="text-cyan-300 text-sm font-bold uppercase tracking-wider mb-2">🏆 Titre</div>
+                <div class="text-white font-semibold">Commandant</div>
+            </div>
+        </div>
+
+        <!-- Histoire Narrative -->
+        <div class="mb-12 animate-fade-in-up" style="animation-delay: 0.3s">
+            <div class="section-title">
+                <i class="fas fa-book"></i>
+                Histoire Personnelle
+            </div>
+            <div class="narrative-section">
+                <p>
+                    Je suis né un soir de novembre 2005 à Springfield, Ohio, sous une pluie qui tambourinait contre les vitres comme si le ciel voulait s'inviter dans la salle d'accouchement, et depuis ce jour-là j'ai toujours eu l'impression que le monde voulait me tester.
+                </p>
+
+                <p>
+                    Mes parents n'avaient pas grand-chose — un père mécano qui rentrait avec l'odeur d'essence collée à la peau, une mère aide-soignante qui chantait Twinkle, Twinkle, Little Star malgré la fatigue — et j'ai grandi entre le chili du dimanche, CNN trop fort et les vieux ordinateurs que je démontais comme des puzzles, jusqu'à ce que ma mère s'effondre sous une dépression et que je comprenne trop tôt que si je voulais que quelque chose tienne debout, il fallait que ce soit moi.
+                </p>
+
+                <div class="quote-box">
+                    À 15 ans, un flic m'a surpris avec une cigarette derrière le lycée et m'a parlé comme personne ne m'avait jamais parlé, me disant que je testais les limites mais qu'un jour ce serait peut-être moi qui les protégerais.
+                </div>
+
+                <p>
+                    Cette phrase m'a accompagné quand j'ai jeté ce paquet et commencé à coder comme d'autres prient, passant mes nuits sur Kali Linux, mes matinées à courir le long de l'Olentangy River et mes samedis au stand de tir, prêt à servir quelque chose de plus grand que moi.
+                </p>
+
+                <p>
+                    Après mon diplôme, j'ai quitté Springfield pour Columbus, studio minuscule, voisin bruyant, hackathons et un prix régional pour un outil anti-ransomware. Puis l'envie d'aller là où la vie est plus rude mais les causes plus grandes m'a poussé à partir pour Los Santos, où j'ai rejoint le LSCSO comme Deputy, le cœur battant dans l'uniforme tout neuf.
+                </p>
+
+                <p>
+                    J'ai appris la rue, les interventions, les nuits où on rentre tremblant sans le montrer, et c'est là que j'ai compris que mon passé — les factures non payées, les larmes silencieuses, la patience, la peur transformée en discipline — m'avait forgé plus sûrement que n'importe quelle école.
+                </p>
+
+                <p>
+                    J'ai grandi dans ce service, j'ai pris des coups, j'ai fait des erreurs, mais j'ai aussi arrêté des types qui voulaient faire du mal, protégé des gamins qui avaient mes yeux à 10 ans, déjoué des attaques cyber contre le département. Et quand un soir j'ai réussi à stopper une intrusion qui aurait mis hors service tout le réseau radio du comté pendant une opération critique, le Sheriff m'a juste regardé et a dit que certains naissent dans la pluie et en sortent faits pour tenir debout quand les autres s'effondrent.
+                </p>
+
+                <div class="quote-box">
+                    C'est comme ça — sans cérémonie, sans discours — que j'ai été promu Commander du LSCSO, en pensant à mes parents au bout du fil chaque dimanche soir, à ce gosse qui pleurait en silence dans le noir, et à la phrase de mon père : « Dans la vie, fils, t'as pas le droit de lâcher… et toi, t'as jamais lâché. »
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Professionnelle -->
+        <div class="mb-12 animate-fade-in-up" style="animation-delay: 0.4s">
+            <div class="section-title">
+                <i class="fas fa-timeline"></i>
+                Parcours Professionnel
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">Nov 2005</div>
+                <div class="timeline-title">Naissance</div>
+                <div class="timeline-description">Né à Springfield, Ohio sous le tonnerre et la pluie. Début d'une vie de luttes et de détermination.</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2015 - 2020</div>
+                <div class="timeline-title">Formation Académique</div>
+                <div class="timeline-description">Lycée à Springfield. Autodidacte en informatique, Kali Linux, cybersécurité. Entraînement au stand de tir et course quotidienne.</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2020 - 2022</div>
+                <div class="timeline-title">Columbus, Ohio - Période de Transition</div>
+                <div class="timeline-description">Studio minuscule. Hackathons. Prix régional pour développement d'outil anti-ransomware. Expérience en cybersécurité appliquée.</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2022 - Présent</div>
+                <div class="timeline-title">LSCSO - Deputy → Commander</div>
+                <div class="timeline-description">Arrivée à Los Santos. Rejoint LSCSO comme Deputy. Progression constante basée sur expertise cyber et performance opérationnelle.</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-title">Promotion - Commander</div>
+                <div class="timeline-description">Promotion à Commander suite à neutralisation d'attaque cyber majeure contre réseau radio du comté. Poste de Commandant, Division Enquêtes Criminelles.</div>
+            </div>
+        </div>
+
+        <!-- Compétences & Expertise -->
+        <div class="mb-12 animate-fade-in-up" style="animation-delay: 0.5s">
+            <div class="section-title">
+                <i class="fas fa-brain"></i>
+                Compétences & Expertise
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="font-bold text-white">Cybersécurité</div>
+                    <div class="text-sm text-gray-400">Expert</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <div class="font-bold text-white">Programmation</div>
+                    <div class="text-sm text-gray-400">Avancé</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <div class="font-bold text-white">Investigations</div>
+                    <div class="text-sm text-gray-400">Expert</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-gavel"></i>
+                    <div class="font-bold text-white">Enquêtes Criminelles</div>
+                    <div class="text-sm text-gray-400">Maîtrisé</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-people-group"></i>
+                    <div class="font-bold text-white">Leadership</div>
+                    <div class="text-sm text-gray-400">Expert</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <div class="font-bold text-white">Combats & Armes</div>
+                    <div class="text-sm text-gray-400">Expert</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Réalisations Majeures -->
+        <div class="mb-12 animate-fade-in-up" style="animation-delay: 0.6s">
+            <div class="section-title">
+                <i class="fas fa-trophy"></i>
+                Réalisations Majeures
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="badge-section">
+                    <div class="flex items-start gap-3">
+                        <div class="text-2xl text-cyan-400">🛡️</div>
+                        <div>
+                            <div class="font-bold text-white mb-2">Défense Cyber Critique</div>
+                            <div class="text-sm text-gray-300">Neutralisation d'une attaque ransomware qui aurait désactivé tout le réseau radio du comté pendant une opération critique. Promotion directe suite à cet acte héroïque.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="badge-section">
+                    <div class="flex items-start gap-3">
+                        <div class="text-2xl text-cyan-400">💡</div>
+                        <div>
+                            <div class="font-bold text-white mb-2">Outil Anti-Ransomware</div>
+                            <div class="text-sm text-gray-300">Développement d'un système de détection et neutralisation de ransomware lors de son passage à Columbus. Prix régional obtenu.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="badge-section">
+                    <div class="flex items-start gap-3">
+                        <div class="text-2xl text-cyan-400">🚨</div>
+                        <div>
+                            <div class="font-bold text-white mb-2">Opérations d'Envergure</div>
+                            <div class="text-sm text-gray-300">Participation à l'arrestation de criminels violents. Protection de civils en situation critique. Intervention d'urgence majeure.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="badge-section">
+                    <div class="flex items-start gap-3">
+                        <div class="text-2xl text-cyan-400">👥</div>
+                        <div>
+                            <div class="font-bold text-white mb-2">Leadership & Mentorat</div>
+                            <div class="text-sm text-gray-300">Commandement de la Division Enquêtes Criminelles. Mentoring de jeunes agents. Transformation de la division en unité de référence.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Valeurs & Philosophie -->
+        <div class="mb-12 animate-fade-in-up" style="animation-delay: 0.7s">
+            <div class="section-title">
+                <i class="fas fa-heart"></i>
+                Valeurs & Philosophie
+            </div>
+            
+            <div class="narrative-section">
+                <div class="mb-4">
+                    <div class="text-cyan-300 font-bold text-lg mb-2">Discipline & Détermination</div>
+                    <p>Transformée de la peur en discipline. Jamais lâcher face aux obstacles. La vie forge ceux qui persévèrent.</p>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-cyan-300 font-bold text-lg mb-2">Service aux Autres</div>
+                    <p>Servir quelque chose de plus grand que soi. Protéger ceux qui n'ont pas ma force. Être la lumière dans l'obscurité.</p>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-cyan-300 font-bold text-lg mb-2">Excellence Professionnelle</div>
+                    <p>Maîtriser son domaine. Innover pour mieux servir. Utiliser la technologie au service de la justice et de la sécurité.</p>
+                </div>
+
+                <div class="mb-4">
+                    <div class="text-cyan-300 font-bold text-lg mb-2">Famille & Engagement</div>
+                    <p>Appel dominical à mes parents. Reconnaissance de mes racines. La gratitude envers ceux qui m'ont élevé malgré la pénurie.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistiques Opérationnelles -->
+        <div class="mb-12 animate-fade-in-up" style="animation-delay: 0.8s">
+            <div class="section-title">
+                <i class="fas fa-chart-bar"></i>
+                Statistiques Opérationnelles
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="stat-card">
+                    <div class="stat-number">156</div>
+                    <div class="text-sm text-gray-400">Opérations Réussies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">89</div>
+                    <div class="text-sm text-gray-400">Arrestations</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">23</div>
+                    <div class="text-sm text-gray-400">Attaques Cyber Déjouées</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1000+</div>
+                    <div class="text-sm text-gray-400">Civils Protégés</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact & Informations -->
+        <div class="mb-12 animate-fade-in-up" style="animation-delay: 0.9s">
+            <div class="section-title">
+                <i class="fas fa-info-circle"></i>
+                Informations Officielles
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="badge-section">
+                    <div class="text-cyan-300 font-bold text-sm mb-3 uppercase tracking-wider">📞 Contact Professionnel</div>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2">
+                            <span class="text-cyan-400">📧</span>
+                            <span>t.didier@lscso.gov</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-cyan-400">📞</span>
+                            <span>(555) 012-3456</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-cyan-400">🏢</span>
+                            <span>LSCSO - Siège Social</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="badge-section">
+                    <div class="text-cyan-300 font-bold text-sm mb-3 uppercase tracking-wider">📋 Dossier Administratif</div>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2">
+                            <span class="text-cyan-400">🏷️</span>
+                            <span>Dossier: LSC-003</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-cyan-400">🎖️</span>
+                            <span>Rang: Commander (5★)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-cyan-400">✅</span>
+                            <span>Statut: Actif en Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Affichage des Distinctions -->
+        <div class="mb-12 animate-fade-in-up" style="animation-delay: 1s">
+            <div class="section-title">
+                <i class="fas fa-medal"></i>
+                Distinctions & Récompenses
+            </div>
+            
+            <div class="flex flex-wrap gap-2">
+                <span class="achievement-badge">🏆 Commander - LSCSO</span>
+                <span class="achievement-badge">🛡️ Expert Cybersécurité</span>
+                <span class="achievement-badge">💻 Développeur Anti-Ransomware</span>
+                <span class="achievement-badge">🎯 Meilleur Tir</span>
+                <span class="achievement-badge">🏃 Athlète d'Excellence</span>
+                <span class="achievement-badge">👁️ Vision Stratégique</span>
+                <span class="achievement-badge">🤝 Leadership Exemplaire</span>
+                <span class="achievement-badge">⚡ Intervention Critique</span>
+            </div>
+        </div>
+
+        <!-- Citation Finale -->
+        <div class="mb-12 animate-fade-in-up" style="animation-delay: 1.1s">
+            <div class="quote-box text-center text-lg">
+                <div class="mb-4">
+                    "Dans la vie, fils, t'as pas le droit de lâcher… et toi, t'as jamais lâché."
+                </div>
+                <div class="text-sm text-cyan-300">— Paroles de son père, qui ont guidé chaque pas</div>
+            </div>
+        </div>
+
+        <!-- Footer Navigation -->
+        <div class="border-t border-slate-700/50 pt-8 pb-4 text-center">
+            <a href="index.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-6 py-3 rounded-lg font-bold transition hover:shadow-lg hover:shadow-cyan-500/50">
+                <i class="fas fa-home"></i>
+                Retour à l'Accueil
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Animation au chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('[class*="animate-"]');
+            elements.forEach(el => {
+                el.style.opacity = '1';
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
